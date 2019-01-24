@@ -1,0 +1,102 @@
+$ctable: #04B4AE;
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	border-spacing: 0px;
+	text-align: center;
+	margin-right: 8px;
+}
+
+th {
+	background-color: $ctable;
+}
+
+td {
+	background-color: white;
+}
+
+th,td {
+	padding:4px;
+}
+
+p {
+  text-indent: 30px;
+  font-family: verdana;
+}
+
+html {
+	margin-right: 30px;
+	margin-left: 40px;
+	
+}
+
+ul li {
+	float: left;
+	padding-right:230px;
+}
+
+ul {
+	padding-left: 200px;
+}
+
+
+.year {
+	border-left-width: 3px;
+}
+
+.impt {
+	background-color: $ctable;
+	
+}
+
+.tit {
+	text-align:center;
+	background-color: lightblue;
+}
+
+.container1 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.marg2{
+	height: 240px;
+}
+
+
+@media print {
+                #screen {
+                    display: none;
+                }
+            }
+
+
+/* PAra SCSS */
+%alink {
+	font-weight: bold;
+}
+a:link {
+	@extend %alink;
+		color:blue;
+	}
+
+a:visited {
+	@extend %alink;
+		color:purple;
+	}
+
+a:hover {
+	@extend %alink;
+		color: green;
+	}
+
+a:active {
+	@extend %alink;
+		color:red;
+	}
+
