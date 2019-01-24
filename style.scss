@@ -1,4 +1,4 @@
-$ctable: #04B4AE;
+$ctable: #FFBF00;
 
 table, th, td {
 	border: 1px solid black;
@@ -68,6 +68,10 @@ ul {
 	height: 240px;
 }
 
+div > h3 {
+	text-align:center;
+}
+
 
 @media print {
                 #screen {
@@ -77,6 +81,7 @@ ul {
 
 
 /* PAra SCSS */
+/* Inheritance*/
 %alink {
 	font-weight: bold;
 }
@@ -100,3 +105,12 @@ a:active {
 		color:red;
 	}
 
+/* Nesting */
+
+h2, h3 {
+
+	li {
+	color:blue;
+	}
+	
+}

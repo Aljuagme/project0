@@ -7,7 +7,7 @@ table {
   margin-right: 8px; }
 
 th {
-  background-color: #04B4AE; }
+  background-color: #FFBF00; }
 
 td {
   background-color: white; }
@@ -34,7 +34,7 @@ ul {
   border-left-width: 3px; }
 
 .impt {
-  background-color: #04B4AE; }
+  background-color: #FFBF00; }
 
 .tit {
   text-align: center;
@@ -44,15 +44,20 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .marg2 {
   height: 240px; }
+
+div > h3 {
+  text-align: center; }
 
 @media print {
   #screen {
     display: none; } }
 /* PAra SCSS */
+/* Inheritance*/
 a:link, a:visited, a:hover, a:active {
   font-weight: bold; }
 
@@ -67,5 +72,9 @@ a:hover {
 
 a:active {
   color: red; }
+
+/* Nesting */
+h2 li, h3 li {
+  color: blue; }
 
 /*# sourceMappingURL=style.css.map */
