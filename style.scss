@@ -72,6 +72,10 @@ div > h3 {
 	text-align:center;
 }
 
+.card-text {
+	text-align:center;
+}
+
 
 @media print {
                 #screen {
@@ -79,6 +83,18 @@ div > h3 {
                 }
             }
 
+@media (min-width:600px) {
+	p {
+		text-indent: 30px;
+	}
+
+}
+
+@media (max-width: 599px) {
+	p {
+		text-indent: 0px;
+	}
+	}
 
 /* PAra SCSS */
 /* Inheritance*/
@@ -108,9 +124,7 @@ a:active {
 /* Nesting */
 
 h2, h3 {
-
 	li {
-	color:blue;
-	}
-	
+	color:blue;}
 }
+

@@ -44,8 +44,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .marg2 {
   height: 240px; }
@@ -53,9 +52,18 @@ ul {
 div > h3 {
   text-align: center; }
 
+.card-text {
+  text-align: center; }
+
 @media print {
   #screen {
     display: none; } }
+@media (min-width: 600px) {
+  p {
+    text-indent: 30px; } }
+@media (max-width: 599px) {
+  p {
+    text-indent: 0px; } }
 /* PAra SCSS */
 /* Inheritance*/
 a:link, a:visited, a:hover, a:active {
